@@ -1,0 +1,35 @@
+/*
+  # ── Security headers ─────────────────────────────────────────
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+  # ── Content Security Policy (strict — no unsafe-inline) ──────
+  # style-src uses hash of the critical inline <style> block.
+  # Any change to critical CSS requires recomputing this hash.
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://unpkg.com; style-src 'self' https://fonts.googleapis.com 'sha256-Ha3fHLytheWa13yP9+ebQKlswN7yb9vfKj0S2b9H6og='; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me; upgrade-insecure-requests;
+
+# ── Static assets — immutable (versioned filenames) ──────────
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ── Service worker — never cache ─────────────────────────────
+/sw.js
+  Cache-Control: no-store
+
+# ── HTML — always revalidate ─────────────────────────────────
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate

@@ -1,0 +1,49 @@
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency dirs (none in this static project, but future-proof)
+node_modules/
+.npm/
+
+# Build artifacts
+dist/
+build/
+
+# Env files (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Python (used for build scripts in dev)
+__pycache__/
+*.py[cod]
+*.pyo
+images_b64.json
+
+# Old version files (keep only v8)
+css/styles.css
+css/styles.v6.css
+css/styles.v7.css
+js/main.js
+js/app.js
+js/app.v6.js
+js/app.v7.js
+service-worker.js
