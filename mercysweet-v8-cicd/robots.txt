@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mercysweetfoods.com/sitemap.xml
-
-# Block private/admin paths (add as needed)
-# Disallow: /admin/
