@@ -243,7 +243,7 @@
   function initSW() {
     if (!('serviceWorker' in navigator)) return;
 
-    navigator.serviceWorker.register('/sw.js', { scope: '/' })
+    // navigator.serviceWorker.register('/sw.js');', { scope: '/' })
       .then(function (reg) {
 
         /* Listen for a waiting worker (new version available) */
