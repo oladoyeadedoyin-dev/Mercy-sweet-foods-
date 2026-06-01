@@ -83,7 +83,7 @@ address { font-style:normal; }
 .d3{transition-delay:.21s} .d4{transition-delay:.28s}
 
 @media(prefers-reduced-motion:reduce){
-  .sr{opacity:1;transform:none;transition:none}
+  
   *,*::before,*::after{
     animation-duration:.01ms!important;
     animation-iteration-count:1!important;
