@@ -5,6 +5,7 @@
  */
 (function () {
   'use strict';
+  document.documentElement.classList.add('js');
 
   /* ── WhatsApp URLs ───────────────────────────────────────── */
   var WA  = 'https://wa.me/2348136440968';
