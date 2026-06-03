@@ -83,23 +83,17 @@ address { font-style:normal; }
 
 /* ── Scroll reveal ───────────────────────────────────────────── */
 
-  opacity:0; transform:translateY(22px);
-  transition:opacity var(--te) var(--ease),transform var(--te) var(--ease);
-  will-change:opacity,transform;
+  .sr {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity var(--te) var(--ease),
+              transform var(--te) var(--ease);
+  will-change: opacity, transform;
 }
 
-.d1{transition-delay:.07s} .d2{transition-delay:.14s}
-.d3{transition-delay:.21s} .d4{transition-delay:.28s}
-
-@media(prefers-reduced-motion:reduce){
-  
-  *,*::before,*::after{
-    animation-duration:.01ms!important;
-    animation-iteration-count:1!important;
-    transition-duration:.01ms!important
-  }
-  .ticker-track{animation:none}
-  .hero-pulse{animation:none;box-shadow:none}
+.sr.in {
+  opacity: 1;
+  transform: none;
 }
 
 /* ── Eyebrow labels ──────────────────────────────────────────── */
