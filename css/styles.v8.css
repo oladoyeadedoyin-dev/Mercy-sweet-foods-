@@ -62,7 +62,12 @@ address { font-style:normal; }
 .ticker  { contain:layout paint; }
 
 /* ── Aspect-ratio (CLS = 0) ─────────────────────────────────── */
-.p-img             { aspect-ratio:16/9; overflow:hidden; position:relative; }
+.p-img {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  height: 240px;
+}
 .g-cell picture,
 .g-cell img        { aspect-ratio:3/4; }
 .story-img-main picture  { aspect-ratio:16/9; }
