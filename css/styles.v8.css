@@ -244,7 +244,7 @@ address { font-style:normal; }
 .p-card:hover { box-shadow:var(--sh-2xl); transform:translateY(-6px); border-color:var(--border2); }
 .p-img { position:relative; overflow:hidden; }
 .p-img picture { display:block; width:100%; height:100%; }
-.p-img img { width:100%; height:100%; object-fit:cover; object-position:center 28%; transition:transform .8s var(--ease); }
+.p-img img { width:100%; height:100%; object-fit:cover; object-position:center 40%; transition:transform .8s var(--ease); }
 .p-card:hover .p-img img { transform:scale(1.06); }
 .p-img-shade { position:absolute; inset:0; background:linear-gradient(to top,var(--n10) 0%,rgba(253,252,250,.3) 40%,transparent 65%); pointer-events:none; }
 .p-badge { position:absolute; top:16px; left:16px; min-height:auto; }
