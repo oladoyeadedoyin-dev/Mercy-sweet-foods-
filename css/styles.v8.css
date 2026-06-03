@@ -154,7 +154,7 @@ address { font-style:normal; }
   bottom:7px; left:14px; right:14px;
   height:1px; background:var(--g600);
   transform:scaleX(0); transform-origin:center;
-  transition:transform var(--tb) var(--ease);
+  transition: transform 1.1s cubic-bezier(.19,1,.22,1);
 }
 .nav-links li a:hover { color:var(--text); }
 .nav-links li a:hover::after,
@@ -265,7 +265,8 @@ address { font-style:normal; }
   transition: transform 0.9s var(--ease);
 }
 .p-card:hover .p-img img {
-  transform: scale(1.12);
+  transform: scale(1.08) translateY(-2px);
+}
 }
 .p-img-shade { position:absolute; inset:0; background:linear-gradient(to top,var(--n10) 0%,rgba(253,252,250,.3) 40%,transparent 65%); pointer-events:none; }
 .p-badge { position:absolute; top:16px; left:16px; min-height:auto; }
