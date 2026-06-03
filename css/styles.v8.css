@@ -82,12 +82,12 @@ address { font-style:normal; }
 .hero-img-b img { height:200px; aspect-ratio:14/7; }
 
 /* ── Scroll reveal ───────────────────────────────────────────── */
-.sr {
+
   opacity:0; transform:translateY(22px);
   transition:opacity var(--te) var(--ease),transform var(--te) var(--ease);
   will-change:opacity,transform;
 }
-.sr.in { opacity:1; transform:none; }
+
 .d1{transition-delay:.07s} .d2{transition-delay:.14s}
 .d3{transition-delay:.21s} .d4{transition-delay:.28s}
 
