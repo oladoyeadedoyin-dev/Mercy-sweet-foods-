@@ -245,7 +245,16 @@ address { font-style:normal; }
 .products-hd-note { font-size:.9rem; color:var(--muted); font-weight:300; max-width:260px; text-align:right; line-height:1.65; }
 .products-grid { max-width:1160px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:var(--s5); }
 .p-card { background:var(--n10); border-radius:var(--r-lg); border:1px solid var(--border); overflow:hidden; box-shadow:var(--sh-sm); transition:box-shadow var(--ts) var(--ease),transform var(--ts) var(--ease),border-color var(--tb); }
-.p-card:hover { box-shadow:var(--sh-2xl); transform:translateY(-6px); border-color:var(--border2); }
+.p-card {
+  transition: transform 1s cubic-bezier(.2,.8,.2,1), box-shadow 1s cubic-bezier(.2,.8,.2,1), border-color 1s cubic-bezier(.2,.8,.2,1);
+  will-change: transform;
+}
+
+.p-card:hover {
+  box-shadow: var(--sh-2xl);
+  transform: translateY(-10px);
+  border-color: var(--border2);
+}
 .p-img { position:relative; overflow:hidden; }
 .p-img picture { display:block; width:100%; height:100%; }
 .p-img img { width:100%; height:100%; object-fit:cover; object-position:center 40%; transition:transform .8s var(--ease); }
