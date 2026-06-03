@@ -45,7 +45,11 @@
 }
 
 /* ── Base ────────────────────────────────────────────────────── */
-img { display:block; max-width:100%; height:auto; }
+.p-img {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
 ul  { list-style:none; }
 address { font-style:normal; }
 :focus-visible { outline:2px solid var(--g600); outline-offset:3px; border-radius:4px; }
