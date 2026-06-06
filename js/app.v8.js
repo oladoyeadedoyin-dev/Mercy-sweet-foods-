@@ -127,7 +127,8 @@ function closeMobileNav() {
 
   if (ham && mnav) {
   ham.addEventListener('click', function () {
-    mnav.style.background = 'red';
+
+    alert('clicked');
 
     var open = ham.getAttribute('aria-expanded') === 'true';
     ham.setAttribute('aria-expanded', String(!open));
