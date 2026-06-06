@@ -135,6 +135,7 @@
       var open = ham.getAttribute('aria-expanded') === 'true';
       ham.setAttribute('aria-expanded', String(!open));
       mnav.classList.toggle('open', !open);
+  mnav.style.background = 'red';
       mnav.setAttribute('aria-hidden', String(open));
     });
   }
