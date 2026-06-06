@@ -111,9 +111,12 @@
   }
 
   /* ── Mobile nav ──────────────────────────────────────────── */
-  var ham  = document.getElementById('hamburger');
-  var mnav = document.getElementById('mobile-nav');
+var ham  = document.getElementById('hamburger');
+var mnav = document.getElementById('mobile-nav');
 
+console.log('hamburger code reached');
+
+function closeMobileNav() {
   function closeMobileNav() {
     if (!ham || !mnav) return;
     ham.setAttribute('aria-expanded', 'false');
