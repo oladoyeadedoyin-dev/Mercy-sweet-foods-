@@ -122,7 +122,16 @@
   }
 
   if (ham && mnav) {
-    ham.addEventListener('click', function () {
+  ham.addEventListener('click', function () {
+
+    alert('Hamburger clicked');
+
+    var open = ham.getAttribute('aria-expanded') === 'true';
+    ham.setAttribute('aria-expanded', String(!open));
+    mnav.classList.toggle('open', !open);
+    mnav.setAttribute('aria-hidden', String(open));
+  });
+}
       var open = ham.getAttribute('aria-expanded') === 'true';
       ham.setAttribute('aria-expanded', String(!open));
       mnav.classList.toggle('open', !open);
