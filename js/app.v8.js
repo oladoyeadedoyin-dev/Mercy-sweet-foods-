@@ -111,6 +111,7 @@
   }
 
   /* ── Mobile nav ──────────────────────────────────────────── */
+  alert('hamburger code loaded');
 var ham  = document.getElementById('hamburger');
 var mnav = document.getElementById('mobile-nav');
 
