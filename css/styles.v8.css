@@ -168,7 +168,13 @@ address { font-style:normal; }
   transition:transform var(--te) var(--ease),opacity var(--tb);
   overflow-y:auto;
 }
-.mobile-nav.open { transform:none; opacity:1; pointer-events:auto; }
+.mobile-nav.open {
+  transform:none !important;
+  opacity:1 !important;
+  pointer-events:auto !important;
+  background:red !important;
+  z-index:99999 !important;
+}
 .mobile-nav a {
   font-size:1.1rem; color:var(--muted); padding:var(--s5) 0;
   border-bottom:1px solid var(--border); min-height:52px;
