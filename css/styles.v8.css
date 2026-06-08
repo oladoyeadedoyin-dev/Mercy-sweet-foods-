@@ -160,13 +160,18 @@ address { font-style:normal; }
 .hamburger[aria-expanded="true"] span:nth-child(2) { opacity:0; transform:scaleX(0); }
 .hamburger[aria-expanded="true"] span:nth-child(3) { transform:rotate(-45deg) translate(4.5px,-4.5px); }
 .mobile-nav {
-  position:fixed; top:72px; left:0; right:0; bottom:0;
-  background:var(--bg); z-index:199;
-  padding:var(--s6) 20px var(--s13);
-  display:flex; flex-direction:column; gap:2px;
-  transform:translateX(100%); opacity:0; pointer-events:none;
-  transition:transform var(--te) var(--ease),opacity var(--tb);
-  overflow-y:auto;
+  position:fixed !important;
+  top:0 !important;
+  left:0 !important;
+  width:100vw !important;
+  height:100vh !important;
+  background:red !important;
+  z-index:999999 !important;
+  display:none !important;
+}
+
+.mobile-nav.open {
+  display:block !important;
 }
 .mobile-nav.open {
   transform:none !important;
