@@ -114,7 +114,8 @@
   alert('hamburger code loaded');
 var ham  = document.getElementById('hamburger');
 var mnav = document.getElementById('mobile-nav');
-
+alert('hamburger=' + !!ham);
+alert('mobile-nav=' + !!mnav);
 console.log('hamburger code reached');
 
 function closeMobileNav() {
