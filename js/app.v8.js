@@ -111,45 +111,33 @@
     });
   }
 
-  /* ── Mobile nav ──────────────────────────────────────────── */
-  alert('hamburger code loaded');
-var ham  = document.getElementById('hamburger');
+/* ── Mobile nav ──────────────────────────────────────────── */
+var ham = document.getElementById('hamburger');
 var mnav = document.getElementById('mobile-nav');
-alert('hamburger=' + !!ham);
-alert('mobile-nav=' + !!mnav);
-console.log('hamburger code reached');
 
 function closeMobileNav() {
-  function closeMobileNav() {
-    if (!ham || !mnav) return;
-    ham.setAttribute('aria-expanded', 'false');
-    mnav.classList.remove('open');
-    mnav.setAttribute('aria-hidden', 'true');
-  }
+  if (!ham || !mnav) return;
 
-  if (ham && mnav) {
+  ham.setAttribute('aria-expanded', 'false');
+  mnav.classList.remove('open');
+  mnav.setAttribute('aria-hidden', 'true');
+}
+
+if (ham && mnav) {
   ham.addEventListener('click', function () {
-
-    alert('clicked');
-
     var open = ham.getAttribute('aria-expanded') === 'true';
+
     ham.setAttribute('aria-expanded', String(!open));
     mnav.classList.toggle('open', !open);
     mnav.setAttribute('aria-hidden', String(open));
   });
 }
-      var open = ham.getAttribute('aria-expanded') === 'true';
-      ham.setAttribute('aria-expanded', String(!open));
-      mnav.classList.toggle('open', !open);
-  mnav.style.background = 'red';
-      mnav.setAttribute('aria-hidden', String(open));
-    });
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    closeMobileNav();
   }
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeMobileNav();
-  });
-
+});
   /* ── Scroll reveal ───────────────────────────────────────── */
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
