@@ -5,6 +5,7 @@
  */
 (function () {
   'use strict';
+  alert('JS LOADED');
   document.documentElement.classList.add('js');
 
   /* ── WhatsApp URLs ───────────────────────────────────────── */
