@@ -246,10 +246,8 @@ document.addEventListener('keydown', function (e) {
 
   /* ── SW: safe update notification ───────────────────────── */
   function initSW() {
-    if (!('serviceWorker' in navigator)) return;
-
-    // navigator.serviceWorker.register('/sw.js');', { scope: '/' })
-      .then(function (reg) {
+  return;
+}
 
         /* Listen for a waiting worker (new version available) */
         function onUpdateFound() {
