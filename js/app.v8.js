@@ -5,6 +5,7 @@
  */
 (function () {
   'use strict';
+  alert('JS STARTED');
   
   document.documentElement.classList.add('js');
 
