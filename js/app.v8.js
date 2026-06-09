@@ -127,9 +127,9 @@ if (ham && mnav) {
   ham.addEventListener('click', function () {
     var open = ham.getAttribute('aria-expanded') === 'true';
 
-    ham.setAttribute('aria-expanded', String(!open));
-    mnav.classList.toggle('open', !open);
-    mnav.setAttribute('aria-hidden', String(open));
+ham.setAttribute('aria-expanded', String(!open));
+mnav.classList.toggle('open', !open);
+mnav.setAttribute('aria-hidden', String(open));
   });
 }
 
